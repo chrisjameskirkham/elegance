@@ -1,0 +1,43 @@
+\documentclass[twocolumn,11pt]{article}
+
+%%% margins
+\usepackage[left=2cm,top=1.5cm,right=2cm,bottom=2.5cm]{geometry}
+
+%%% other packages
+\usepackage{abstract}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+%%% redefinitions
+\makeatletter
+
+%% sections
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+      {-1.5ex \@plus -1ex \@minus -.2ex}%
+      {0.1ex \@plus.1ex}% <=== space after
+      {\normalfont\Large\bfseries}}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+	{-0.2ex \@plus -1.0ex \@minus -0.2ex}%
+    {0.1ex \@plus -.7ex}%
+    {\normalfont\large\bfseries}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+	{-0.25ex\@plus -1ex \@minus -.2ex}%
+	{0.1ex \@plus .2ex}%
+	{\normalfont\normalsize\bfseries}}
+
+\makeatother
+
+%%% paragraph stlying
+\addtolength{\parskip}{0.7\baselineskip}
+
+%%% generated section naming
+\renewcommand{\refname}{References}
